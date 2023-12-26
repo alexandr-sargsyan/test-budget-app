@@ -40,7 +40,6 @@ class ParseBudgetTable extends Command
 
         $response = $googleSheetsService->fetchData($url);
         $data = json_decode($response->getBody(), true);
-//        dd($data);
 
 
         $inputData = [];
